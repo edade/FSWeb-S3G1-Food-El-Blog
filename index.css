@@ -75,6 +75,9 @@ img {
   background: #e79947;
   /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
 }
+li {
+  display: inline;
+}
 
 .container header nav a:hover {
   /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
@@ -136,5 +139,5 @@ footer nav a:first-child {
 
 footer .footer-content .copyright {
   padding: 20px 0;
-  /*======= metni ortalayacak kodu yazın */
+  text-align: center; /*======= metni ortalayacak kodu yazın */
 }
