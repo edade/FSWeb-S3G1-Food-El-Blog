@@ -3,6 +3,10 @@
 }
 
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
+body {
+  padding: 0;
+  margin: 0;
+}
 
 h1 {
   text-align: center;
@@ -24,6 +28,10 @@ h6 {
   font-size: 30px;
 }
 
+.gri {
+  background: #f5f5f5;
+  padding: 20px;
+}
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
 
 font-size: 16px;
@@ -46,10 +54,21 @@ p {
 */
 img {
   border-radius: 10px;
+  display: block;
+  width: 100%;
 }
 
 .content-row {
   display: flex;
+  padding: 30px;
+}
+
+.height {
+  height: 30½;
+}
+
+.content-row img {
+  width: 50%;
 }
 
 .content-row div {
@@ -75,19 +94,19 @@ img {
   background: #e79947;
   /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
 }
-li {
-  display: inline;
-}
 
 .container header nav a:hover {
   /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
   background: white;
-  color: white;
+  color: #e79947;
 }
 
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
   margin-top: 20px;
 */
+.about {
+  margin-top: 20px;
+}
 
 .contact-section {
   border-top: 1px dashed black;
@@ -112,6 +131,7 @@ footer {
 footer .footer-content {
   margin: 0 auto;
   /*======= width property yaratın. Değerini 750px olarak atayın */
+  width: 750px;
 }
 
 footer .footer-content h3 {
@@ -128,6 +148,11 @@ footer nav {
   color: black;
   text-decoration: underline;
 */
+footer a {
+  margin: 10px;
+  color: black;
+  text-decoration: underline;
+}
 
 footer nav a:first-child {
   margin-left: 0;
@@ -136,8 +161,12 @@ footer nav a:first-child {
 /*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:
   color: white;
 */
+footer a:hover {
+  color: white;
+}
 
 footer .footer-content .copyright {
   padding: 20px 0;
   text-align: center; /*======= metni ortalayacak kodu yazın */
+  margin: 0;
 }
